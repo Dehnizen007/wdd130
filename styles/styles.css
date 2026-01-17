@@ -33,7 +33,7 @@ main img {
     width: auto;
     height: auto;
     padding: 1rem;
-    box-shadow: #333;
+    box-shadow: grey;
 }
 
 aside {
