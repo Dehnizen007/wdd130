@@ -22,11 +22,18 @@ img {
 }
 
 p {
-    padding: 10px
+    padding: 0px
 }
 
 main {
     max-width: 840px;
+}
+
+main img {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    box-shadow: #333;
 }
 
 aside {
@@ -41,13 +48,9 @@ aside {
 }
 
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
 
-}
-
-p {
-    padding: 0;
 }
 
 footer {
