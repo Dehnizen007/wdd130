@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #333;
+}
+
+section {
+    margin: 20px 0;
+    border: 1px solid rgb(rgb(0, 0, 0), green, blue) / 10%;
+    padding: 10px;
+    background-color: rgb(212, 213, 213);
+    font-size: .9rem;
+}
+
+section p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
