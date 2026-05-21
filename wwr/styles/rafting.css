@@ -29,7 +29,7 @@ body {
 
 header,
 main {
-    width: 840px;
+    width: auto;
     margin: 0 auto;
 }
 
