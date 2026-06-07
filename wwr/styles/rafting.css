@@ -88,7 +88,6 @@ h2 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
     opacity: .7;
     background-color: var(--accent1-color);
@@ -278,6 +277,8 @@ h1 {
 .checkbox {
     font-size: 14px;
     align-items: center;
+    white-space: nowrap;
+    gap: .5rem;
 }
 
 button {
