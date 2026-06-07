@@ -7,7 +7,7 @@
 :root {
     --primary-color: #0b4f6c;
     /*Deep River blue */
-    --secondary-color: #01baef;
+    --secondary-color: #ffffff;
     /*Splash Cyan*/
     --accent1-color: #f26419;
     /*Safety Vest orange*/
@@ -21,9 +21,10 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
     max-width: 1000px;
+
 }
 
 .header img {
@@ -49,12 +50,12 @@ nav a {
     display: block;
     text-align: center;
     padding: 1rem;
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     text-decoration: none;
 
 }
 
-.nav a:hover {
+nav a:hover {
     color: var(--accent2-color);
     text-decoration: underline;
 }
@@ -66,8 +67,8 @@ main {
 }
 
 footer {
-    border-top: 5px solid var(--secondary-color);
-    border-bottom: 5px solid var(--secondary-color);
+    border-top: 5px solid var(--accent2-color);
+    border-bottom: 5px solid var(--accent1-color);
     text-align: center;
     display: flex;
     justify-content: flex-end;
@@ -80,6 +81,26 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
+}
+
+/* only hero page title should be absolute */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: .7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* keep header-text in normal document flow */
+.header-text {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 1.5rem auto 0;
+    max-width: 1100px;
 }
 
 nav,
@@ -115,10 +136,9 @@ article {
 }
 
 h1 {
-    position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
     opacity: .7;
     background-color: var(--accent1-color);
@@ -132,6 +152,20 @@ h1 {
     position: absolute;
     top: 80px;
     border-radius: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 15px;
 }
 
 .hero article img {
@@ -184,11 +218,7 @@ h1 {
 .company-info {
     text-align: center;
     padding: 30px 0;
-}
-
-.company-info h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 /* Contact & Map Layout */
